@@ -36,6 +36,7 @@ void merge(int items[], int left[], int lengthL, int right[], int lengthR){
 }
 
 void mergeSort(int items[], int length){
+    // divide array into two parts
     int middle = length / 2;
     int leftLength = middle;
     int left[leftLength];
