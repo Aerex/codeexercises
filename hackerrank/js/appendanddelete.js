@@ -36,8 +36,11 @@ function main() {
             commonLength++;
         }
 
+        // Diff is the total length of each word minus the common length of each word
         var diff = s.length + t.length - 2*commonLength;
-    //
+
+        // If the difference is less than k there should be enough moves; however if the diff is odd and the k is even then there are not enough moves
+        // you need diff and even and k of even or diff of odd and k of odd. Testing even is easier
         if(diff <= k && diff%2 === k%2){
             console.log("Yes");
         } else {
